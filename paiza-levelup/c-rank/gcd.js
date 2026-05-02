@@ -5,24 +5,9 @@ const tmp = lines[0].split(' ');
 let a = Number(tmp[0]);
 let b = Number(tmp[1]);
 
-if (a === 0) {
-  console.log(b);
-} else if (b === 0) {
-  console.log(a);
-} else if (a === b) {
-  console.log(a);
+while (b !== 0) {
+  let remainder = a % b;
+  a = b;
+  b = remainder;
 }
-
-while (a !== 0 && b !== 0 && a !== b) {
-  if (a < b) {
-    b = b % a;
-  } else if (a > b) {
-    a = a % b;
-  }
-}
-
-if (a === 0) {
-  console.log(b);
-} else if (b === 0) {
-  console.log(a);
-}
+console.log(a);
