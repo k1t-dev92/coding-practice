@@ -1,9 +1,8 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.trim().split('\n');
 
-const tmp = lines[0].split(' ');
-let a = Number(tmp[0]);
-let b = Number(tmp[1]);
+let [a, b] = lines[0].split(' ').map(Number);
+
 const product = a * b;
 
 while (b !== 0) {
