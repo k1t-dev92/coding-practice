@@ -1,6 +1,6 @@
 # coding-practice
 
-A repository for coding practice.
+A repository for coding practice
 
 ## Language
 
@@ -8,8 +8,8 @@ A repository for coding practice.
 
 ## Directory Structure
 
-| Directory | Description |
-|---|---|
-| `atcoder/` | Solutions to AtCoder problems |
-| `dsa/` | Basic data structures and algorithms practice |
-| `paiza-levelup/` | Solutions to Paiza level-up problems |
+| Directory        | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `atcoder/`       | Solutions to AtCoder problems                 |
+| `dsa/`           | Basic data structures and algorithms practice |
+| `paiza-levelup/` | Solutions to Paiza level-up problems          |
