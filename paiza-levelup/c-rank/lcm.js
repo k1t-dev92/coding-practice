@@ -6,7 +6,7 @@ let [a, b] = lines[0].split(' ').map(Number);
 const product = a * b;
 
 while (b !== 0) {
-  let remainder = a % b;
+  const remainder = a % b;
   a = b;
   b = remainder;
 }

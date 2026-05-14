@@ -4,7 +4,7 @@ const lines = input.trim().split('\n');
 let [a, b] = lines[0].split(' ').map(Number);
 
 while (b !== 0) {
-  let remainder = a % b;
+  const remainder = a % b;
   a = b;
   b = remainder;
 }
