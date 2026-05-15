@@ -3,12 +3,9 @@ const lines = input.trim().split('\n');
 
 const n = Number(lines[0]);
 for (let i = 1; i <= n; i++) {
+  const row = [];
   for (let j = 1; j <= n; j++) {
-    if (j === n) {
-      process.stdout.write(`${i * j}`);
-    } else {
-      process.stdout.write(`${i * j} `);
-    }
+    row.push(i * j);
   }
-  console.log();
+  console.log(row.join(' '));
 }
