@@ -5,7 +5,7 @@ const n = Number(lines[0]);
 
 let isPrime = true;
 
-if (n === 1) {
+if (n <= 1) {
   isPrime = false;
 }
 
