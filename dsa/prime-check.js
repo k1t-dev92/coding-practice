@@ -9,7 +9,7 @@ if (n <= 1) {
   isPrime = false;
 }
 
-for (let i = 2; i <= Math.sqrt(n); i++) {
+for (let i = 2; i * i <= n; i++) {
   if (n % i === 0) {
     isPrime = false;
     break;
