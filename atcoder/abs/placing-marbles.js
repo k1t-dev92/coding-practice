@@ -3,11 +3,6 @@ const lines = input.trim().split('\n');
 
 const s = lines[0].split('');
 
-let count = 0;
-for (let i = 0; i < s.length; i++) {
-  if (s[i] === '1') {
-    count++;
-  }
-}
+const count = s.filter((c) => c === '1').length;
 
 console.log(count);
