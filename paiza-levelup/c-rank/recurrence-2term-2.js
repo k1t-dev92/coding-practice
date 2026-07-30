@@ -3,7 +3,6 @@ const lines = input.trim().split('\n');
 
 const [x, d] = lines[0].split(' ').map(Number);
 const Q = Number(lines[1]);
-
 const a = [];
 a[1] = x;
 
