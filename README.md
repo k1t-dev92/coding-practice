@@ -8,11 +8,12 @@ A repository for coding practice
 
 ## Directory Structure
 
-| Directory              | Description                                   |
-| ---------------------- | --------------------------------------------- |
-| `atcoder/`             | Solutions to AtCoder problems                 |
-| `atcoder/abs/`         | AtCoder Beginners Selection (ABS)             |
-| `dsa/`                 | Basic data structures and algorithms practice |
-| `paiza-levelup/`       | Solutions to Paiza level-up problems          |
-| `paiza-levelup/c-rank/`| C rank problems                               |
-| `paiza-levelup/d-rank/`| D rank problems                               |
+| Directory               | Description                                   |
+| ----------------------- | --------------------------------------------- |
+| `atcoder/`              | Solutions to AtCoder problems                 |
+| `atcoder/abs/`          | AtCoder Beginners Selection (ABS)             |
+| `dsa/`                  | Basic data structures and algorithms practice |
+| `paiza-levelup/`        | Solutions to Paiza level-up problems          |
+| `paiza-levelup/b-rank/` | B rank problems                               |
+| `paiza-levelup/c-rank/` | C rank problems                               |
+| `paiza-levelup/d-rank/` | D rank problems                               |
