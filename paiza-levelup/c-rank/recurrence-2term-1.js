@@ -1,4 +1,4 @@
-const input = require('fs').readFileSync('/dev/stdin', 'utf-8');
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.trim().split('\n');
 
 const [x, d, k] = lines[0].split(' ').map(Number);
