@@ -8,4 +8,6 @@ console.log(n + 1);
 console.log(b + 1);
 console.log(c + 1);
 
-a.forEach((v) => console.log(v + 1));
+for (let i = 0; i < a.length; i++) {
+  console.log(a[i] + 1);
+}

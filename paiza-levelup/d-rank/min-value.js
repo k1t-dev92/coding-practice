@@ -4,10 +4,10 @@ const lines = input.trim().split('\n');
 const numbers = lines.map(Number);
 let min = numbers[0];
 
-numbers.forEach((v) => {
-  if (min > v) {
-    min = v;
+for (let i = 1; i < numbers.length; i++) {
+  if (min > numbers[i]) {
+    min = numbers[i];
   }
-});
+}
 
 console.log(min);

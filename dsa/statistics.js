@@ -6,15 +6,15 @@ const numbers = lines[0].split(' ').map(Number);
 let sum = 0;
 let sumOfSquaredDeviations = 0;
 
-numbers.forEach((number) => {
-  sum += number;
-});
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
 
 const average = sum / numbers.length;
 
-numbers.forEach((number) => {
-  sumOfSquaredDeviations += (number - average) * (number - average);
-});
+for (let i = 0; i < numbers.length; i++) {
+  sumOfSquaredDeviations += (numbers[i] - average) * (numbers[i] - average);
+}
 
 const variance = sumOfSquaredDeviations / numbers.length;
 const std = Math.sqrt(variance);
