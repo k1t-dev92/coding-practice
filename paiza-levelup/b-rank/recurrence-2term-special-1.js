@@ -2,7 +2,7 @@ const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.trim().split('\n');
 
 const [x, d1, d2, k] = lines[0].split(' ').map(Number);
-const a = new Array(k + 1);
+const a = [];
 a[1] = x;
 
 for (let i = 2; i <= k; i++) {
