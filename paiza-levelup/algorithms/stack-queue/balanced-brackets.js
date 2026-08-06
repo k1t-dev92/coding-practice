@@ -10,7 +10,7 @@ let isValid = true;
 for (let i = 0; i < n; i++) {
   if (s[i] === '(') {
     stack.push(s[i]);
-  } else {
+  } else if (s[i] === ')') {
     if (stack.length === 0) {
       isValid = false;
       break;
