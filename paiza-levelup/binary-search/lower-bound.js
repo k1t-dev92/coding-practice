@@ -10,11 +10,11 @@ a.sort((x, y) => x - y);
 const answers = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 3]);
-  answers.push(n - binarySearch(a, n, k));
+  answers.push(n - lowerBound(a, n, k));
 }
 console.log(answers.join('\n'));
 
-function binarySearch(a, n, k) {
+function lowerBound(a, n, k) {
   let left = 0;
   let right = n;
   while (left < right) {
