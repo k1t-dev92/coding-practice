@@ -8,26 +8,24 @@ const q = Number(lines[2]);
 const answers = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 3]);
-  answers.push(binarySearch(a, n, k));
+  answers.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
 }
 console.log(answers.join('\n'));
 
 function binarySearch(a, n, k) {
   let left = 0;
   let right = n - 1;
-  let result = -1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
     if (a[mid] === k) {
-      result = mid;
-      break;
+      return mid;
     } else if (a[mid] < k) {
       left = mid + 1;
     } else {
       right = mid - 1;
     }
   }
-  return result !== -1 ? 'Yes' : 'No';
+  return -1;
 }
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__basic_step0
