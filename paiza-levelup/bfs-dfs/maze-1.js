@@ -9,8 +9,9 @@ for (let i = 0; i < h; i++) {
   grid.push(new Array(w).fill('.'));
 }
 
+grid[y][x] = '*';
+
 const moves = [
-  [0, 0],
   [1, 0],
   [-1, 0],
   [0, 1],
