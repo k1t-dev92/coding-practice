@@ -31,3 +31,5 @@ for (let i = 0; i < h; i++) {
   results.push(grid[i].join(''));
 }
 console.log(results.join('\n'));
+
+// https://paiza.jp/works/mondai/bfs_dfs_problems/bfs_dfs_problems__move_once
