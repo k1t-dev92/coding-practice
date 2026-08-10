@@ -14,3 +14,5 @@ for (let i = 2; i <= k; i++) {
 }
 
 console.log(a[k]);
+
+// https://paiza.jp/works/mondai/dp_primer/dp_primer_recursive_formula_step2

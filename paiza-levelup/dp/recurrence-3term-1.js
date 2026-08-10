@@ -11,3 +11,5 @@ for (let i = 3; i <= k; i++) {
 }
 
 console.log(a[k]);
+
+// https://paiza.jp/works/mondai/dp_primer/dp_primer_recursive_formula_step4

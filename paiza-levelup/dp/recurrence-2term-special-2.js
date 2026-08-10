@@ -20,3 +20,5 @@ for (let i = 0; i < Q; i++) {
   const k = Number(lines[i + 2]);
   console.log(a[k]);
 }
+
+// https://paiza.jp/works/mondai/dp_primer/dp_primer_recursive_formula_step3
