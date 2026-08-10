@@ -12,9 +12,11 @@ for (let i = 2; i <= MAX_K; i++) {
   a[i] = a[i - 1] + d;
 }
 
+const result = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 2]);
-  console.log(a[k]);
+  result.push(a[k]);
 }
+console.log(result.join('\n'));
 
 // https://paiza.jp/works/mondai/dp_primer/dp_primer_recursive_formula_step1
