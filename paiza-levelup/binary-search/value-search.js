@@ -5,12 +5,12 @@ const n = Number(lines[0]);
 const a = lines[1].split(' ').map(Number);
 const q = Number(lines[2]);
 
-const answers = [];
+const results = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 3]);
-  answers.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
+  results.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
 }
-console.log(answers.join('\n'));
+console.log(results.join('\n'));
 
 function binarySearch(a, n, k) {
   let left = 0;

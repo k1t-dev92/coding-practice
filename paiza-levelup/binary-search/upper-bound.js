@@ -7,12 +7,12 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-const answers = [];
+const results = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 3]);
-  answers.push(n - upperBound(a, n, k));
+  results.push(n - upperBound(a, n, k));
 }
-console.log(answers.join('\n'));
+console.log(results.join('\n'));
 
 function upperBound(a, n, k) {
   let left = 0;

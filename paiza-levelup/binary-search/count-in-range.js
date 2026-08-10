@@ -7,12 +7,12 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-const answers = [];
+const results = [];
 for (let i = 0; i < q; i++) {
   const [l, r] = lines[i + 3].split(' ').map(Number);
-  answers.push(countInRange(a, n, l, r));
+  results.push(countInRange(a, n, l, r));
 }
-console.log(answers.join('\n'));
+console.log(results.join('\n'));
 
 function countInRange(a, n, l, r) {
   return upperBound(a, n, r) - lowerBound(a, n, l);
