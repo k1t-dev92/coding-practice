@@ -2,7 +2,7 @@ const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.trim().split('\n');
 
 const n = Number(lines[0]);
-const result = [];
+const results = [];
 
 for (let i = 2; i <= n; i++) {
   let isPrime = true;
@@ -15,8 +15,8 @@ for (let i = 2; i <= n; i++) {
   }
 
   if (isPrime) {
-    result.push(i);
+    results.push(i);
   }
 }
 
-console.log(result.join(' '));
+console.log(results.join(' '));

@@ -5,13 +5,13 @@ const [n, a] = lines[0].split(' ').map(Number);
 
 const remainder = a % n;
 
-const result = [];
+const results = [];
 for (let i = 1; i <= 100000; i++) {
   if (i % n === remainder) {
-    result.push(i);
+    results.push(i);
   }
 }
 
-console.log(result.join('\n'));
+console.log(results.join('\n'));
 
 // https://paiza.jp/works/mondai/euclidean_primer/euclidean_primer__mod_equal
