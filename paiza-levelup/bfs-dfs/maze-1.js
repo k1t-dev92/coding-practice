@@ -25,6 +25,8 @@ for (const [dy, dx] of moves) {
   }
 }
 
+const results = [];
 for (let i = 0; i < h; i++) {
-  console.log(grid[i].join(''));
+  results.push(grid[i].join(''));
 }
+console.log(results.join('\n'));
