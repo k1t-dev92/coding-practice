@@ -26,8 +26,7 @@ for (let i = 0; i < n; i++) {
       const ny = cy + dy;
       const nx = cx + dx;
       if (ny < 0 || ny >= h || nx < 0 || nx >= w) continue;
-      if (s[ny][nx] === '#') continue;
-      if (s[ny][nx] === '*') continue;
+      if (s[ny][nx] !== '.') continue;
       s[ny][nx] = '*';
       next.push([ny, nx]);
     }
