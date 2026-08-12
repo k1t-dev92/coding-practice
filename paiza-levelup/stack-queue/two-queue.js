@@ -7,12 +7,11 @@ const queues = [[], []];
 for (let i = 0; i < q; i++) {
   const [type, k, x] = lines[i + 1].split(' ');
   const t = Number(type);
+  const idx = Number(k) - 1;
 
   if (t === 1) {
-    const idx = Number(k) - 1;
     queues[idx].push(x);
   } else if (t === 2) {
-    const idx = Number(k) - 1;
     const last = queues[idx].shift();
     console.log(last);
   } else if (t === 3) {
