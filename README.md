@@ -16,7 +16,10 @@ A repository for coding practice
 | `method/`                      | JavaScript method references                  |
 | `paiza-levelup/`               | Solutions to Paiza level-up problems          |
 | `paiza-levelup/b-rank/`        | B rank problems                               |
+| `paiza-levelup/bfs-dfs/`       | BFS and DFS problems                          |
 | `paiza-levelup/binary-search/` | Binary search problems                        |
 | `paiza-levelup/c-rank/`        | C rank problems                               |
 | `paiza-levelup/d-rank/`        | D rank problems                               |
+| `paiza-levelup/dp/`            | Dynamic programming problems                  |
+| `paiza-levelup/prefix-sum/`    | Prefix sum problems                           |
 | `paiza-levelup/stack-queue/`   | Stack and queue problems                      |
