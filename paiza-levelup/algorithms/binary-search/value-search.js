@@ -5,13 +5,6 @@ const n = Number(lines[0]);
 const a = lines[1].split(' ').map(Number);
 const q = Number(lines[2]);
 
-const results = [];
-for (let i = 0; i < q; i++) {
-  const k = Number(lines[i + 3]);
-  results.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
-}
-console.log(results.join('\n'));
-
 function binarySearch(a, n, k) {
   let left = 0;
   let right = n - 1;
@@ -27,5 +20,12 @@ function binarySearch(a, n, k) {
   }
   return -1;
 }
+
+const results = [];
+for (let i = 0; i < q; i++) {
+  const k = Number(lines[i + 3]);
+  results.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
+}
+console.log(results.join('\n'));
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__basic_step0

@@ -7,13 +7,6 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-const results = [];
-for (let i = 0; i < q; i++) {
-  const [l, r] = lines[i + 3].split(' ').map(Number);
-  results.push(countInRange(a, n, l, r));
-}
-console.log(results.join('\n'));
-
 function countInRange(a, n, l, r) {
   return upperBound(a, n, r) - lowerBound(a, n, l);
 }
@@ -45,5 +38,12 @@ function lowerBound(a, n, l) {
   }
   return right;
 }
+
+const results = [];
+for (let i = 0; i < q; i++) {
+  const [l, r] = lines[i + 3].split(' ').map(Number);
+  results.push(countInRange(a, n, l, r));
+}
+console.log(results.join('\n'));
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__basic_boss

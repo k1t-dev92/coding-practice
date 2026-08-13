@@ -7,13 +7,6 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-const results = [];
-for (let i = 0; i < q; i++) {
-  const k = Number(lines[i + 3]);
-  results.push(n - upperBound(a, n, k));
-}
-console.log(results.join('\n'));
-
 function upperBound(a, n, k) {
   let left = 0;
   let right = n;
@@ -27,5 +20,12 @@ function upperBound(a, n, k) {
   }
   return right;
 }
+
+const results = [];
+for (let i = 0; i < q; i++) {
+  const k = Number(lines[i + 3]);
+  results.push(n - upperBound(a, n, k));
+}
+console.log(results.join('\n'));
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__basic_step2
