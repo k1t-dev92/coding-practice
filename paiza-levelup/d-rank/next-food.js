@@ -10,3 +10,5 @@ if ((data[0] >= 19 && data[0] <= 23) || (data[0] >= 0 && data[0] < 7)) {
 } else if (data[0] >= 13 && data[0] < 19) {
   console.log('dinner');
 }
+
+// https://paiza.jp/works/mondai/rank_test_problems_d_0001/rank_test_problems_d_0001__3

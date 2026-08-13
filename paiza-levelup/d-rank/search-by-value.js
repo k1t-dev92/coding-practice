@@ -10,3 +10,5 @@ for (let i = 0; i < n; i++) {
     console.log(i + 1);
   }
 }
+
+// https://paiza.jp/works/mondai/sequence_search_problems/sequence_search_problems_search_value_boss
