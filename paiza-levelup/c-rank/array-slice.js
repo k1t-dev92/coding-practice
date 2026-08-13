@@ -11,3 +11,5 @@ console.log(c + 1);
 for (let i = 0; i < a.length; i++) {
   console.log(a[i] + 1);
 }
+
+// https://paiza.jp/works/mondai/cd_rank_input_problems/cd_rank_input_problems__C2_step5

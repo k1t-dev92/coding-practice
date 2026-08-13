@@ -13,3 +13,5 @@ while (b !== 0) {
 
 const lcm = product / a;
 console.log(lcm);
+
+// https://paiza.jp/works/mondai/euclidean_primer/euclidean_primer__lcm

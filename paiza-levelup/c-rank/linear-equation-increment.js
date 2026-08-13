@@ -24,3 +24,5 @@ if (isNaN(Number(c))) {
 } else {
   console.log(Number(c) + 1);
 }
+
+// https://paiza.jp/works/mondai/cd_rank_input_problems/cd_rank_input_problems__C1_step5

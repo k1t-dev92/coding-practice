@@ -9,3 +9,5 @@ for (let i = 1; i <= n; i++) {
   }
   console.log(row.join(' '));
 }
+
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__2dim_array_boss

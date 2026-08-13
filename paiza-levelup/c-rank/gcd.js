@@ -9,3 +9,5 @@ while (b !== 0) {
   b = remainder;
 }
 console.log(a);
+
+// https://paiza.jp/works/mondai/euclidean_primer/euclidean_primer__simple_gcd
