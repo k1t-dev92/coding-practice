@@ -31,3 +31,5 @@ A repository for coding practice
 | `paiza-levelup/d-rank/d-rank-skillcheck-sample/` | D rank skill check sample problems            |
 | `paiza-levelup/d-rank/d-rank-test-1/`            | D rank proficiency test problems (set 1)      |
 | `paiza-levelup/d-rank/d-rank-test-2/`            | D rank proficiency test problems (set 2)      |
+
+`script.js` is a scratch file for solving problems.
