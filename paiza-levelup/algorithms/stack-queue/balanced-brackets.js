@@ -6,7 +6,6 @@ const s = lines[1];
 
 const stack = [];
 let isValid = true;
-
 for (let i = 0; i < n; i++) {
   if (s[i] === '(') {
     stack.push(s[i]);
