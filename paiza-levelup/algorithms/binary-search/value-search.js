@@ -11,20 +11,20 @@ function binarySearch(a, n, k) {
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
     if (a[mid] === k) {
-      return mid;
+      return true;
     } else if (a[mid] < k) {
       left = mid + 1;
     } else {
       right = mid - 1;
     }
   }
-  return -1;
+  return false;
 }
 
 const results = [];
 for (let i = 0; i < q; i++) {
   const k = Number(lines[i + 3]);
-  results.push(binarySearch(a, n, k) !== -1 ? 'Yes' : 'No');
+  results.push(binarySearch(a, n, k) ? 'Yes' : 'No');
 }
 console.log(results.join('\n'));
 
