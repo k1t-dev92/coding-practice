@@ -7,10 +7,6 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-function countInRange(a, n, l, r) {
-  return upperBound(a, n, r) - lowerBound(a, n, l);
-}
-
 function upperBound(a, n, r) {
   let left = 0;
   let right = n;
@@ -37,6 +33,10 @@ function lowerBound(a, n, l) {
     }
   }
   return right;
+}
+
+function countInRange(a, n, l, r) {
+  return upperBound(a, n, r) - lowerBound(a, n, l);
 }
 
 const results = [];
