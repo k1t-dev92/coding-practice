@@ -12,8 +12,8 @@ for (let i = 0; i < q; i++) {
   if (t === 1) {
     queues[idx].push(x);
   } else if (t === 2) {
-    const last = queues[idx].shift();
-    console.log(last);
+    const first = queues[idx].shift();
+    console.log(first);
   } else if (t === 3) {
     console.log(`${queues[0].length} ${queues[1].length}`);
   }
