@@ -54,3 +54,5 @@ while (low < high) {
 }
 
 console.log(low);
+
+// https://paiza.jp/works/mondai/binary_search/binary_search__application_boss
