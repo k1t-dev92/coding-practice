@@ -13,17 +13,17 @@ function count(x) {
   return total;
 }
 
-let lo = 0;
-let hi = 10000;
+let low = 0;
+let high = 10000;
 for (let i = 0; i < 100; i++) {
-  const mid = (lo + hi) / 2;
+  const mid = (low + high) / 2;
   if (count(mid) >= k) {
-    lo = mid;
+    low = mid;
   } else {
-    hi = mid;
+    high = mid;
   }
 }
 
-console.log(lo.toFixed(10));
+console.log(low.toFixed(10));
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__application_step0

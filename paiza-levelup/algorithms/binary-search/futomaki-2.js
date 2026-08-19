@@ -31,18 +31,18 @@ function canCut(x) {
   return count + 1 <= n;
 }
 
-// 達成可能な最小の x を探す。hi は常に達成可能な側に置く
-let lo = 0;
-let hi = l;
+// 達成可能な最小の x を探す。high は常に達成可能な側に置く
+let low = 0;
+let high = l;
 for (let i = 0; i < 100; i++) {
-  const mid = Math.floor((lo + hi) / 2);
+  const mid = Math.floor((low + high) / 2);
   if (canCut(mid)) {
-    hi = mid;
+    high = mid;
   } else {
-    lo = mid;
+    low = mid;
   }
 }
 
-console.log(hi);
+console.log(high);
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__application_step3

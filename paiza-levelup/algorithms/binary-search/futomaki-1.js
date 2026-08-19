@@ -21,17 +21,17 @@ function canCut(x) {
   return pieces >= n;
 }
 
-let lo = 0;
-let hi = l + 1;
+let low = 0;
+let high = l + 1;
 for (let i = 0; i < 100; i++) {
-  const mid = Math.floor((lo + hi) / 2);
+  const mid = Math.floor((low + high) / 2);
   if (canCut(mid)) {
-    lo = mid;
+    low = mid;
   } else {
-    hi = mid;
+    high = mid;
   }
 }
 
-console.log(lo);
+console.log(low);
 
 // https://paiza.jp/works/mondai/binary_search/binary_search__application_step2
