@@ -19,6 +19,6 @@ for (let i = 0; i < numbers.length; i++) {
 const variance = sumOfSquaredDeviations / numbers.length;
 const std = Math.sqrt(variance);
 
-console.log(average);
-console.log(variance);
-console.log(std);
+console.log(average.toFixed(2));
+console.log(variance.toFixed(2));
+console.log(std.toFixed(2));
