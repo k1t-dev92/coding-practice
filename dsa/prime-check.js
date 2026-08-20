@@ -16,4 +16,4 @@ for (let i = 2; i * i <= n; i++) {
   }
 }
 
-console.log(isPrime);
+console.log(`${n} is ${isPrime ? 'a prime number' : 'not a prime number'}`);
