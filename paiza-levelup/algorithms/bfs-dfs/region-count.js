@@ -14,15 +14,21 @@ const moves = [
   [0, -1],
 ];
 
-function dfs(cy, cx) {
-  s[cy][cx] = '#';
+function dfs(sy, sx) {
+  const stack = [[sy, sx]];
+  s[sy][sx] = '#';
 
-  for (const [dy, dx] of moves) {
-    const ny = cy + dy;
-    const nx = cx + dx;
-    if (ny < 0 || ny >= h || nx < 0 || nx >= w) continue;
-    if (s[ny][nx] !== '.') continue;
-    dfs(ny, nx);
+  while (stack.length > 0) {
+    const [cy, cx] = stack.pop();
+
+    for (const [dy, dx] of moves) {
+      const ny = cy + dy;
+      const nx = cx + dx;
+      if (ny < 0 || ny >= h || nx < 0 || nx >= w) continue;
+      if (s[ny][nx] !== '.') continue;
+      s[ny][nx] = '#';
+      stack.push([ny, nx]);
+    }
   }
 }
 
