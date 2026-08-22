@@ -9,7 +9,7 @@ let right = arr.length - 1;
 let result = -1;
 
 while (left <= right) {
-  const mid = Math.floor((left + right) / 2); // 切り捨てで必ず left 寄りになることを保証する
+  const mid = Math.floor((left + right) / 2); // 切り捨てで必ず left 寄りにして範囲が縮むことを保証する
   if (arr[mid] === target) {
     result = mid;
     break;
