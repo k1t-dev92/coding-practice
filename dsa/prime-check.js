@@ -3,12 +3,7 @@ const lines = input.trim().split('\n');
 
 const n = Number(lines[0]);
 
-let isPrime = true;
-
-if (n <= 1) {
-  isPrime = false;
-}
-
+let isPrime = n >= 2;
 for (let i = 2; i * i <= n; i++) {
   if (n % i === 0) {
     isPrime = false;
