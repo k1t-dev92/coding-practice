@@ -9,8 +9,8 @@ isPrime[1] = false;
 
 for (let i = 2; i <= n; i++) {
   if (isPrime[i]) {
-    for (let k = 2; k * i <= n; k++) {
-      isPrime[k * i] = false;
+    for (let j = 2; j * i <= n; j++) {
+      isPrime[j * i] = false;
     }
   }
 }
