@@ -21,6 +21,7 @@ A repository for coding practice
 | `paiza-levelup/algorithms/euclidean-algorithm/`  | Euclidean algorithm problems                  |
 | `paiza-levelup/algorithms/linear-search/`        | Linear search problems                        |
 | `paiza-levelup/algorithms/prefix-sum/`           | Prefix sum problems                           |
+| `paiza-levelup/algorithms/prime-number/`         | Prime number problems                         |
 | `paiza-levelup/algorithms/stack-queue/`          | Stack and queue problems                      |
 | `paiza-levelup/b-rank/`                          | Problems for reaching B rank                  |
 | `paiza-levelup/b-rank/dp/`                       | Dynamic programming problems                  |
