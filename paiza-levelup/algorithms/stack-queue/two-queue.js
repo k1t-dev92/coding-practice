@@ -5,16 +5,15 @@ const q = Number(lines[0]);
 const queues = [[], []];
 
 for (let i = 0; i < q; i++) {
-  const [type, k, x] = lines[i + 1].split(' ');
-  const t = Number(type);
-  const idx = Number(k) - 1;
+  const [type, k, x] = lines[i + 1].split(' ').map(Number);
+  const idx = k - 1;
 
-  if (t === 1) {
+  if (type === 1) {
     queues[idx].push(x);
-  } else if (t === 2) {
+  } else if (type === 2) {
     const first = queues[idx].shift();
     console.log(first);
-  } else if (t === 3) {
+  } else if (type === 3) {
     console.log(`${queues[0].length} ${queues[1].length}`);
   }
 }
