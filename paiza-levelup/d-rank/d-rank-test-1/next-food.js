@@ -1,13 +1,13 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.trim().split('\n');
 
-const data = lines[0].split(' ').map(Number);
+const [hour] = lines[0].split(' ').map(Number);
 
-if ((data[0] >= 19 && data[0] <= 23) || (data[0] >= 0 && data[0] < 7)) {
+if ((hour >= 19 && hour <= 23) || (hour >= 0 && hour < 7)) {
   console.log('breakfast');
-} else if (data[0] >= 7 && data[0] < 13) {
+} else if (hour >= 7 && hour < 13) {
   console.log('lunch');
-} else if (data[0] >= 13 && data[0] < 19) {
+} else if (hour >= 13 && hour < 19) {
   console.log('dinner');
 }
 
