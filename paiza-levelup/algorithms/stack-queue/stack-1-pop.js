@@ -9,9 +9,7 @@ for (let i = 0; i < q; i++) {
 
   if (query[0] === 1) {
     a.push(query[1]);
-  }
-
-  if (query[0] === 2) {
+  } else if (query[0] === 2) {
     a.pop();
   }
   console.log(a.join(' '));
