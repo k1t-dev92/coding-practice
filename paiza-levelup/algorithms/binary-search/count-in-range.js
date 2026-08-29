@@ -7,12 +7,12 @@ const q = Number(lines[2]);
 
 a.sort((x, y) => x - y);
 
-function upperBound(a, n, r) {
+function upperBound(a, n, k) {
   let left = 0;
   let right = n;
   while (left < right) {
     const mid = Math.floor((left + right) / 2);
-    if (a[mid] <= r) {
+    if (a[mid] <= k) {
       left = mid + 1;
     } else {
       right = mid;
@@ -21,12 +21,12 @@ function upperBound(a, n, r) {
   return right;
 }
 
-function lowerBound(a, n, l) {
+function lowerBound(a, n, k) {
   let left = 0;
   let right = n;
   while (left < right) {
     const mid = Math.floor((left + right) / 2);
-    if (a[mid] < l) {
+    if (a[mid] < k) {
       left = mid + 1;
     } else {
       right = mid;
