@@ -20,10 +20,10 @@ const moves = [
 
 let current = [[sy, sx]];
 
-let count = 0;
+let steps = 0;
 let result = sy === gy && sx === gx ? 0 : -1;
 while (current.length !== 0) {
-  count++;
+  steps++;
   const next = [];
   for (const [cy, cx] of current) {
     for (const [dy, dx] of moves) {
@@ -33,7 +33,7 @@ while (current.length !== 0) {
       if (s[ny][nx] !== '.') continue;
       s[ny][nx] = '*';
       if (ny === gy && nx === gx) {
-        result = count;
+        result = steps;
       }
       next.push([ny, nx]);
     }
