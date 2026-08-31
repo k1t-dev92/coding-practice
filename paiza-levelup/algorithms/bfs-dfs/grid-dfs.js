@@ -12,7 +12,7 @@ const moves = [
 
 function dfs(cy, cx, count) {
   if (count === 3) {
-    console.log(cy, cx);
+    console.log(`${cy} ${cx}`);
     return;
   }
 
