@@ -6,7 +6,7 @@ const w = lines[1].split(' ').map(Number);
 const v = lines[2].split(' ').map(Number);
 
 // 平均価値を x 以上にできるか判定する
-// Vの和 / Wの和 >= x <=> Σ(v[i] - x * w[i]) >= 0
+// v の和 / w の和 >= x <=> Σ(v[i] - x * w[i]) >= 0
 function canAchieve(x) {
   const scores = [];
   for (let i = 0; i < n; i++) {
