@@ -4,7 +4,7 @@ const lines = input.trim().split('\n');
 const [n, k] = lines[0].split(' ').map(Number);
 const a = lines[1].split(' ').map(Number);
 
-// 長さxで切ったとき、合計何本取れるか
+// 長さ x で切ったとき、合計何本取れるか
 function count(x) {
   let total = 0;
   for (let i = 0; i < n; i++) {

@@ -16,7 +16,7 @@ function canCut(x) {
     }
   }
 
-  // 最後のピースが x未満なら、最後の切れ目は使わない（ピースが1つ減る）
+  // 最後のピースが x 未満なら、最後の切れ目は使わない（ピースが1つ減る）
   const pieces = l - left >= x ? count + 1 : count;
   return pieces >= n;
 }
