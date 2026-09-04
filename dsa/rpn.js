@@ -6,7 +6,7 @@ const a = lines[1].split(' ');
 
 const stack = [];
 for (let i = 0; i < n; i++) {
-  if (a[i] === '+' || a[i] === '-' || a[i] === '*' || a[i] === '/') {
+  if ('+-*/'.includes(a[i])) {
     const right = stack.pop();
     const left = stack.pop();
     if (a[i] === '+') {
