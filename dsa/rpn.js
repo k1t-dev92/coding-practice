@@ -15,7 +15,7 @@ for (let i = 0; i < n; i++) {
       stack.push(left - right);
     } else if (a[i] === '*') {
       stack.push(left * right);
-    } else {
+    } else if (a[i] === '/') {
       stack.push(left / right);
     }
   } else {
