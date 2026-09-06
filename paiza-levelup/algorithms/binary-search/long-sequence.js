@@ -5,8 +5,9 @@ const n = Number(lines[0]);
 const a = lines[1].split(' ').map(Number);
 const m = Number(lines[2]);
 const b = lines[3].split(' ').map(Number);
-b.sort((x, y) => x - y);
 const k = Number(lines[4]);
+
+b.sort((x, y) => x - y);
 
 function countAtMost(x) {
   let left = 0;
