@@ -5,7 +5,7 @@ const [l, n, k] = lines[0].split(' ').map(Number);
 const a = lines[1].split(' ').map(Number);
 
 // すべてのピースを x 以上にして n 分割できるか判定する
-// 左から順に見て、直前に切った位置から x 以上離れてたら切る（貪欲法）
+// 左から順に見て、直前に切った位置から x 以上離れていたら切る（貪欲法）
 function canCut(x) {
   let left = 0;
   let count = 0;
