@@ -21,9 +21,8 @@ const moves = [
 for (const [dy, dx] of moves) {
   const ny = y + dy;
   const nx = x + dx;
-  if (ny >= 0 && ny < h && nx >= 0 && nx < w) {
-    grid[ny][nx] = '*';
-  }
+  if (ny < 0 || ny >= h || nx < 0 || nx >= w) continue;
+  grid[ny][nx] = '*';
 }
 
 const results = [];
