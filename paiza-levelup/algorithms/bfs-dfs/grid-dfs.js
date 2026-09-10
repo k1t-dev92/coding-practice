@@ -10,8 +10,8 @@ const moves = [
   [0, -1],
 ];
 
-function dfs(cy, cx, count) {
-  if (count === 3) {
+function dfs(cy, cx, steps) {
+  if (steps === 3) {
     console.log(`${cy} ${cx}`);
     return;
   }
@@ -20,7 +20,7 @@ function dfs(cy, cx, count) {
     const ny = cy + dy;
     const nx = cx + dx;
     if (ny < 0 || ny >= h || nx < 0 || nx >= w) continue;
-    dfs(ny, nx, count + 1);
+    dfs(ny, nx, steps + 1);
   }
 }
 
