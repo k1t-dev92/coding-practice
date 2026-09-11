@@ -20,7 +20,7 @@ function countAtMost(x) {
       right = mid;
     }
   }
-  return left;
+  return right;
 }
 
 // |a[i] - b[j]| <= x を満たすマスの個数
