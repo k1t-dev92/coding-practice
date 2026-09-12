@@ -10,16 +10,16 @@ for (let i = 0; i < x; i++) {
 }
 
 let max = sum;
-let left = a[0];
+let leftValue = a[0];
 
 for (let i = x; i < n; i++) {
   sum = sum - a[i - x] + a[i];
   if (sum > max) {
     max = sum;
-    left = a[i - x + 1];
+    leftValue = a[i - x + 1];
   }
 }
 
-console.log(`${max} ${left}`);
+console.log(`${max} ${leftValue}`);
 
 // https://paiza.jp/works/mondai/stack_queue/stack_queue__practice_step2
