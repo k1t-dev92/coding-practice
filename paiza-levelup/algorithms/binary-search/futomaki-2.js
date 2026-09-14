@@ -12,10 +12,12 @@ function canCut(x) {
   for (let i = 0; i < k; i++) {
     if (a[i] - left > x) {
       const prev = i === 0 ? 0 : a[i - 1];
-      if (prev === left) return false; // 切れる位置がなく x 以下にできない
+      // 切れる位置がなく x 以下にできない
+      if (prev === left) return false;
       left = prev;
       count++;
-      if (a[i] - left > x) return false; // 切れ目の間隔そのものが x より広い
+      // 切れ目の間隔そのものが x より広い
+      if (a[i] - left > x) return false;
     }
   }
 
