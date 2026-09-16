@@ -11,7 +11,7 @@ b.sort((x, y) => x - y);
 
 function countAtMost(x) {
   let left = 0;
-  let right = b.length;
+  let right = m;
   while (left < right) {
     const mid = Math.floor((left + right) / 2);
     if (b[mid] <= x) {
