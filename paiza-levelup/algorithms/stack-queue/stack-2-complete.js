@@ -7,6 +7,7 @@ const a = [];
 for (let i = 0; i < q; i++) {
   const [type, x] = lines[i + 1].split(' ');
   const t = Number(type);
+
   if (t === 1) {
     a.push(x);
   } else if (t === 2) {
