@@ -6,3 +6,5 @@ const [b, c] = lines[1].split(' ').map(Number);
 const s = lines[2];
 
 console.log(`${a + b + c} ${s}`);
+
+// https://atcoder.jp/contests/abs/tasks/practice_1
