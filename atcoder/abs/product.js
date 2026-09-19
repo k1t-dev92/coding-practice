@@ -8,3 +8,5 @@ if ((a * b) % 2 === 0) {
 } else {
   console.log('Odd');
 }
+
+// https://atcoder.jp/contests/abs/tasks/abc086_a
