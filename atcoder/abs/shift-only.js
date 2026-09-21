@@ -23,3 +23,5 @@ while (allEven) {
 }
 
 console.log(count);
+
+// https://atcoder.jp/contests/abs/tasks/abc081_b
